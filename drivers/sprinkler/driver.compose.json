@@ -3,7 +3,9 @@
     "en": "YoLink Sprinkler"
   },
   "class": "other",
-  "capabilities": ["onoff"],
+  "capabilities": [
+    "onoff"
+  ],
   "capabilitiesOptions": {
     "onoff": {
       "title": {
@@ -11,9 +13,16 @@
       }
     }
   },
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",

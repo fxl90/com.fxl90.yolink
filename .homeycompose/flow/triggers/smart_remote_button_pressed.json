@@ -1,8 +1,0 @@
-{
-  "id": "smart_remote_button_pressed",
-  "title": { "en": "Remote button pressed" },
-  "tokens": [
-    { "name": "button", "type": "number", "title": { "en": "Button" } },
-    { "name": "action", "type": "string", "title": { "en": "Action" } }
-  ]
-}

@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "id": "temperature_above",
+      "title": { "en": "!{{Temperature is|Temperature is not}} above" },
+      "titleFormatted": { "en": "Temperature !{{is|is not}} above [[value]] °C" },
+      "args": [
+        { "type": "number", "name": "value", "min": -50, "max": 100, "step": 0.5, "placeholder": { "en": "°C" } }
+      ]
+    },
+    {
+      "id": "humidity_above",
+      "title": { "en": "!{{Humidity is|Humidity is not}} above" },
+      "titleFormatted": { "en": "Humidity !{{is|is not}} above [[value]] %" },
+      "args": [
+        { "type": "number", "name": "value", "min": 0, "max": 100, "step": 1, "placeholder": { "en": "%" } }
+      ]
+    },
+    {
+      "id": "battery_below",
+      "title": { "en": "!{{Battery is|Battery is not}} below" },
+      "titleFormatted": { "en": "Battery !{{is|is not}} below [[value]] %" },
+      "args": [
+        { "type": "number", "name": "value", "min": 0, "max": 100, "step": 5, "placeholder": { "en": "%" } }
+      ]
+    }
+  ]
+}

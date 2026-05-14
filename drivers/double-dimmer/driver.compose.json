@@ -1,0 +1,12 @@
+{
+  "name": { "en": "YoLink Double Dimmer" },
+  "class": "light",
+  "capabilities": ["onoff","dim","onoff.ch2","dim.ch2"],
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "pair": [
+    { "id": "credentials" },
+    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
+    { "id": "add_devices", "template": "add_devices" }
+  ]
+}

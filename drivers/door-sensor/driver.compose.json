@@ -3,10 +3,20 @@
     "en": "YoLink Door Sensor"
   },
   "class": "sensor",
-  "capabilities": ["alarm_contact", "measure_battery"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "alarm_contact",
+    "measure_battery"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",

@@ -1,0 +1,12 @@
+{
+  "name": { "en": "YoLink Power Failure Alarm" },
+  "class": "sensor",
+  "capabilities": ["alarm_generic","measure_battery"],
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "pair": [
+    { "id": "credentials" },
+    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
+    { "id": "add_devices", "template": "add_devices" }
+  ]
+}

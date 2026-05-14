@@ -4,9 +4,16 @@
   },
   "class": "sensor",
   "capabilities": [],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",

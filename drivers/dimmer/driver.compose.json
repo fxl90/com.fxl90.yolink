@@ -3,10 +3,20 @@
     "en": "YoLink Dimmer"
   },
   "class": "light",
-  "capabilities": ["onoff", "dim"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "onoff",
+    "dim"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",

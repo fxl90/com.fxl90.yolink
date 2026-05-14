@@ -3,10 +3,20 @@
     "en": "YoLink Lock"
   },
   "class": "lock",
-  "capabilities": ["locked", "measure_battery"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "locked",
+    "measure_battery"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",
