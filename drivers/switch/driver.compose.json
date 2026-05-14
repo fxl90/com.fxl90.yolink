@@ -3,10 +3,19 @@
     "en": "YoLink Switch"
   },
   "class": "socket",
-  "capabilities": ["onoff"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "onoff"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",
@@ -18,5 +27,10 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "images": {
+    "small": "/drivers/switch/assets/images/small.png",
+    "large": "/drivers/switch/assets/images/large.png",
+    "xlarge": "/drivers/switch/assets/images/xlarge.png"
+  }
 }

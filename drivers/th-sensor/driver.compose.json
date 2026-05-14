@@ -3,10 +3,21 @@
     "en": "YoLink Temperature & Humidity Sensor"
   },
   "class": "sensor",
-  "capabilities": ["measure_temperature", "measure_humidity", "measure_battery"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "measure_temperature",
+    "measure_humidity",
+    "measure_battery"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",
@@ -18,5 +29,16 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/th-sensor/assets/images/small.png",
+    "large": "/drivers/th-sensor/assets/images/large.png",
+    "xlarge": "/drivers/th-sensor/assets/images/xlarge.png"
+  }
 }

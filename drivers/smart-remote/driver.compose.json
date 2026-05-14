@@ -4,9 +4,16 @@
   },
   "class": "sensor",
   "capabilities": [],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",
@@ -18,5 +25,10 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "images": {
+    "small": "/drivers/smart-remote/assets/images/small.png",
+    "large": "/drivers/smart-remote/assets/images/large.png",
+    "xlarge": "/drivers/smart-remote/assets/images/xlarge.png"
+  }
 }

@@ -3,7 +3,11 @@
     "en": "YoLink Thermostat"
   },
   "class": "thermostat",
-  "capabilities": ["measure_temperature", "target_temperature", "thermostat_mode"],
+  "capabilities": [
+    "measure_temperature",
+    "target_temperature",
+    "thermostat_mode"
+  ],
   "capabilitiesOptions": {
     "target_temperature": {
       "min": 5,
@@ -11,9 +15,16 @@
       "step": 0.5
     }
   },
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",
@@ -25,5 +36,10 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "images": {
+    "small": "/drivers/thermostat/assets/images/small.png",
+    "large": "/drivers/thermostat/assets/images/large.png",
+    "xlarge": "/drivers/thermostat/assets/images/xlarge.png"
+  }
 }

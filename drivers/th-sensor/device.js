@@ -5,7 +5,24 @@ const YoLinkDevice = require('../../lib/YoLinkDevice');
 class THSensorDevice extends YoLinkDevice {
 
   async onInit() {
+    this._registerConditions();
     await super.onInit();
+  }
+
+  _registerConditions() {
+    const flow = this.homey.flow;
+    flow.getConditionCard('temperature_above').registerRunListener(async (args, state) => {
+      const v = this.getCapabilityValue('measure_temperature');
+      return typeof v === 'number' && v > args.value;
+    });
+    flow.getConditionCard('humidity_above').registerRunListener(async (args, state) => {
+      const v = this.getCapabilityValue('measure_humidity');
+      return typeof v === 'number' && v > args.value;
+    });
+    flow.getConditionCard('battery_below').registerRunListener(async (args, state) => {
+      const v = this.getCapabilityValue('measure_battery');
+      return typeof v === 'number' && v < args.value;
+    });
   }
 
   async _applyState(data) {

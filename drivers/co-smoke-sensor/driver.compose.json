@@ -1,0 +1,45 @@
+{
+  "name": {
+    "en": "YoLink CO & Smoke Sensor"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_smoke",
+    "alarm_co",
+    "measure_battery"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "pair": [
+    {
+      "id": "credentials"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA",
+      "AA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/co-smoke-sensor/assets/images/small.png",
+    "large": "/drivers/co-smoke-sensor/assets/images/large.png",
+    "xlarge": "/drivers/co-smoke-sensor/assets/images/xlarge.png"
+  }
+}

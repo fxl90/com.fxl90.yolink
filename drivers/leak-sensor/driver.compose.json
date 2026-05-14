@@ -3,10 +3,20 @@
     "en": "YoLink Leak Sensor"
   },
   "class": "sensor",
-  "capabilities": ["alarm_water", "measure_battery"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "alarm_water",
+    "measure_battery"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
+    {
+      "id": "credentials"
+    },
     {
       "id": "list_devices",
       "template": "list_devices",
@@ -18,5 +28,16 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/leak-sensor/assets/images/small.png",
+    "large": "/drivers/leak-sensor/assets/images/large.png",
+    "xlarge": "/drivers/leak-sensor/assets/images/xlarge.png"
+  }
 }

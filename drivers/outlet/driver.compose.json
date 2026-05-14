@@ -1,0 +1,36 @@
+{
+  "name": {
+    "en": "YoLink Outlet"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "pair": [
+    {
+      "id": "credentials"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "images": {
+    "small": "/drivers/outlet/assets/images/small.png",
+    "large": "/drivers/outlet/assets/images/large.png",
+    "xlarge": "/drivers/outlet/assets/images/xlarge.png"
+  }
+}

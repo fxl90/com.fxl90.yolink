@@ -1,0 +1,38 @@
+{
+  "triggers": [
+    {
+      "id": "smart_remote_button_pressed",
+      "title": { "en": "A button is pressed" },
+      "titleFormatted": { "en": "Button [[button]] was [[action]]" },
+      "hint": { "en": "Triggered when any button on the remote is pressed. Use 'button' and 'action' tokens, or add the button/action argument cards to filter." },
+      "tokens": [
+        { "name": "button", "type": "number", "title": { "en": "Button" } },
+        { "name": "action", "type": "string", "title": { "en": "Action" } }
+      ],
+      "args": [
+        {
+          "type": "dropdown",
+          "name": "button",
+          "title": { "en": "Button" },
+          "values": [
+            { "id": "any", "label": { "en": "Any" } },
+            { "id": "1", "label": { "en": "Button 1" } },
+            { "id": "2", "label": { "en": "Button 2" } },
+            { "id": "3", "label": { "en": "Button 3" } },
+            { "id": "4", "label": { "en": "Button 4" } }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "action",
+          "title": { "en": "Action" },
+          "values": [
+            { "id": "any",   "label": { "en": "Any" } },
+            { "id": "Press", "label": { "en": "Short press" } },
+            { "id": "LongPress", "label": { "en": "Long press" } }
+          ]
+        }
+      ]
+    }
+  ]
+}
