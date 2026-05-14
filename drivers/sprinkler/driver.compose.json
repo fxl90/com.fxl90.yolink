@@ -1,0 +1,29 @@
+{
+  "name": {
+    "en": "YoLink Sprinkler"
+  },
+  "class": "other",
+  "capabilities": ["onoff"],
+  "capabilitiesOptions": {
+    "onoff": {
+      "title": {
+        "en": "Manual Watering"
+      }
+    }
+  },
+  "platforms": ["local"],
+  "connectivity": ["lan"],
+  "pair": [
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ]
+}

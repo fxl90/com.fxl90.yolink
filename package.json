@@ -1,0 +1,17 @@
+{
+  "name": "com.fxl90.yolink",
+  "version": "1.0.0",
+  "description": "YoLink local network integration for Homey",
+  "main": "app.js",
+  "scripts": {
+    "build": "homey app build",
+    "validate": "homey app validate",
+    "install": "homey app install"
+  },
+  "dependencies": {
+    "mqtt": "^5.3.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
