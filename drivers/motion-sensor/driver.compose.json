@@ -28,5 +28,16 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/motion-sensor/assets/images/small.png",
+    "large": "/drivers/motion-sensor/assets/images/large.png",
+    "xlarge": "/drivers/motion-sensor/assets/images/xlarge.png"
+  }
 }

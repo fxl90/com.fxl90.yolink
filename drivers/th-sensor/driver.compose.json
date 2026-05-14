@@ -29,5 +29,16 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/th-sensor/assets/images/small.png",
+    "large": "/drivers/th-sensor/assets/images/large.png",
+    "xlarge": "/drivers/th-sensor/assets/images/xlarge.png"
+  }
 }

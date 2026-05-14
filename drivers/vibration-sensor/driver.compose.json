@@ -1,12 +1,43 @@
 {
-  "name": { "en": "YoLink Vibration Sensor" },
+  "name": {
+    "en": "YoLink Vibration Sensor"
+  },
   "class": "sensor",
-  "capabilities": ["alarm_motion","measure_battery"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "alarm_motion",
+    "measure_battery"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
-    { "id": "credentials" },
-    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
-    { "id": "add_devices", "template": "add_devices" }
-  ]
+    {
+      "id": "credentials"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/vibration-sensor/assets/images/small.png",
+    "large": "/drivers/vibration-sensor/assets/images/large.png",
+    "xlarge": "/drivers/vibration-sensor/assets/images/xlarge.png"
+  }
 }

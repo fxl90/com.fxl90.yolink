@@ -28,5 +28,16 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/leak-sensor/assets/images/small.png",
+    "large": "/drivers/leak-sensor/assets/images/large.png",
+    "xlarge": "/drivers/leak-sensor/assets/images/xlarge.png"
+  }
 }

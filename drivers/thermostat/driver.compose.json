@@ -36,5 +36,10 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "images": {
+    "small": "/drivers/thermostat/assets/images/small.png",
+    "large": "/drivers/thermostat/assets/images/large.png",
+    "xlarge": "/drivers/thermostat/assets/images/xlarge.png"
+  }
 }

@@ -1,12 +1,42 @@
 {
-  "name": { "en": "YoLink Finger" },
+  "name": {
+    "en": "YoLink Finger"
+  },
   "class": "button",
-  "capabilities": ["button"],
-  "platforms": ["local"],
-  "connectivity": ["lan"],
+  "capabilities": [
+    "button"
+  ],
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
   "pair": [
-    { "id": "credentials" },
-    { "id": "list_devices", "template": "list_devices", "navigation": { "next": "add_devices" } },
-    { "id": "add_devices", "template": "add_devices" }
-  ]
+    {
+      "id": "credentials"
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "navigation": {
+        "next": "add_devices"
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices"
+    }
+  ],
+  "energy": {
+    "batteries": [
+      "AAA",
+      "AAA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/finger/assets/images/small.png",
+    "large": "/drivers/finger/assets/images/large.png",
+    "xlarge": "/drivers/finger/assets/images/xlarge.png"
+  }
 }

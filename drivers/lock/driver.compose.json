@@ -28,5 +28,18 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA",
+      "AA",
+      "AA"
+    ]
+  },
+  "images": {
+    "small": "/drivers/lock/assets/images/small.png",
+    "large": "/drivers/lock/assets/images/large.png",
+    "xlarge": "/drivers/lock/assets/images/xlarge.png"
+  }
 }

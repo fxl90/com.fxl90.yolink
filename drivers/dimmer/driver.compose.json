@@ -28,5 +28,10 @@
       "id": "add_devices",
       "template": "add_devices"
     }
-  ]
+  ],
+  "images": {
+    "small": "/drivers/dimmer/assets/images/small.png",
+    "large": "/drivers/dimmer/assets/images/large.png",
+    "xlarge": "/drivers/dimmer/assets/images/xlarge.png"
+  }
 }
